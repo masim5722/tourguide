@@ -1,6 +1,6 @@
 {
   "name": "@masim5722/tourguide",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "Tour Guide is a private react library which is used to implement web tour in to the application",
   "author": "masim5722",
   "license": "MIT",
@@ -24,13 +24,10 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
-    "styled-components": "^5.1.0",
-    "reactour": "^1.17.0",
-    "axios": "^0.19.0",
-    "body-scroll-lock": "^3.0.2"
+    "react": "^16.0.0"
   },
   "devDependencies": {
+    "axios": "^0.19.0",
     "microbundle-crl": "^0.13.10",
     "babel-eslint": "^10.0.3",
     "cross-env": "^7.0.2",
@@ -52,7 +49,6 @@
     "react-scripts": "^3.4.1",
     "styled-components": "^5.1.0",
     "reactour": "^1.17.0",
-    "axios": "^0.19.0",
     "body-scroll-lock": "^3.0.2"
   },
   "files": [

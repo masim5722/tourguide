@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import {callApi} from "./api";
 import Tour from "reactour";
-import './styles.module.css';
+import './styles.css';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 
