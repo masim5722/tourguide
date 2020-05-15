@@ -113,9 +113,9 @@ class TourGuide extends Component {
                     const action = () => {
                         // calling api to get initial data
                         const payload = {
-                            url: base_api_url+'employee-steps',
+                            url: this.props.base_api_url+'employee-steps',
                             method: 'POST',
-                            secret: api_secret,
+                            secret: this.props.api_secret,
                             data:{
                                 step_id: step_id,
                                 employee_id: this.props.employeeId,
@@ -137,9 +137,9 @@ class TourGuide extends Component {
                     const endTour = () => {
                         // calling api to get initial data
                         const payload = {
-                            url: base_api_url+'tour-guide/end',
+                            url: this.props.base_api_url+'tour-guide/end',
                             method: 'POST',
-                            secret: api_secret,
+                            secret: this.props.api_secret,
                             data:{
                                 system_id: this.props.system,
                                 page: this.props.page,
@@ -169,6 +169,8 @@ class TourGuide extends Component {
                                 </Fragment>
                             )
                     };
+                  const base_api_url = this.props.base_api_url;
+                  const api_secret = this.props.api_secret;
 
                     steps.push({
                         selector: selector,
