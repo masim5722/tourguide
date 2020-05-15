@@ -7,22 +7,53 @@
 ## Install
 
 ```bash
-npm install --save tourguide
+npm install --save @masim5722/tourguide
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'tourguide'
 import 'tourguide/dist/index.css'
+import TourGuide from 'tourguide'
+import config from './config'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+
+const App = () => {
+  return <TourGuide page="demo"
+                    base_api_url={config.base_api_url}
+                    api_secret={config.api_secret}
+                    system={3}
+                    employeeId="0"
+                    startbutton={true}
+                    endbutton={true}
+  />
 }
+
+export default App
+
+```
+
+## config.js
+Create config.js file in components folder.
+```$xslt
+/**
+ * Configuration file for TourGuide Library
+ * @type {string}
+ */
+
+// base api url
+const base_api_url = <BASE API URL>;
+const api_secret = <API SECRET>;
+
+let config = {
+    "base_api_url":base_api_url,
+    "api_secret":api_secret,
+};
+
+export default config;
+
 ```
 
 ## License

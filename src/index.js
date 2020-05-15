@@ -1,12 +1,10 @@
-import React, {Component, Fragment} from 'react';
+import React, { Component, Fragment } from 'react'
 import {callApi} from "./api";
-import config from "./config";
 import Tour from "reactour";
 import './styles.module.css';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
-const base_api_url = config.base_api_url;
-const api_secret = config.api_secret;
+
 const disableBody = target => disableBodyScroll(target);
 const enableBody = target => enableBodyScroll(target);
 
@@ -91,9 +89,9 @@ class TourGuide extends Component {
     handleStartTour = (api_url) => {
         // calling api to get initial data
         const payload = {
-            url: base_api_url+api_url,
+            url: this.props.base_api_url+api_url,
             method: 'POST',
-            secret: api_secret,
+            secret: this.props.api_secret,
             data:{
                 system_id: this.props.system,
                 page: this.props.page,
