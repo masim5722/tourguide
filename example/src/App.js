@@ -1,10 +1,16 @@
 import React from 'react'
 
-import { ExampleComponent } from 'tourguide'
 import 'tourguide/dist/index.css'
+import TourGuide from 'tourguide'
+
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <TourGuide page="demo"
+                    system={3}
+                    employeeId="0"
+                    startbutton={true}
+                    endbutton={true}
+  />
 }
 
 export default App
