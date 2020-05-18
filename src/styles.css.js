@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: 2px 2px 3px #999;
     cursor: pointer;
     border: none;
-    outline: none;
+    outline: none !important;
   }
   .tour-box {
     padding: 0 !important;
