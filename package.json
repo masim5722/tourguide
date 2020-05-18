@@ -27,8 +27,6 @@
     "react": "^16.0.0"
   },
   "devDependencies": {
-    "axios": "^0.19.0",
-    "microbundle-crl": "^0.13.10",
     "babel-eslint": "^10.0.3",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
@@ -42,16 +40,21 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.2.0",
+    "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1",
-    "styled-components": "^5.1.0",
-    "reactour": "^1.17.0",
-    "body-scroll-lock": "^3.0.2"
+    "react-scripts": "^3.4.1"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "axios": "^0.19.0",
+    "react-focus-lock": "^2.3.1",
+    "body-scroll-lock": "^3.0.2",
+    "reactour": "^1.17.0",
+    "styled-components": "4.4.0"
+  }
 }

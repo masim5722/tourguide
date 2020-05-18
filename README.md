@@ -46,10 +46,12 @@ Create config.js file in components folder.
 // base api url
 const base_api_url = <BASE API URL>;
 const api_secret = <API SECRET>;
+const system_id = <SYSTEM ID>;
 
 let config = {
     "base_api_url":base_api_url,
     "api_secret":api_secret,
+    "system_id": system_id
 };
 
 export default config;

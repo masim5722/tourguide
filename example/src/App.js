@@ -1,9 +1,7 @@
 import React from 'react'
 
-import 'tourguide/dist/index.css'
 import TourGuide from 'tourguide'
 import config from './config'
-
 
 const App = () => {
   return <TourGuide page="demo"

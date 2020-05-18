@@ -1,9 +1,8 @@
 import React, { Component, Fragment } from 'react'
 import {callApi} from "./api";
 import Tour from "reactour";
-import './styles.css';
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
-
+import {GlobalStyle} from './styles.css.js'
 
 const disableBody = target => disableBodyScroll(target);
 const enableBody = target => enableBodyScroll(target);
@@ -248,9 +247,10 @@ class TourGuide extends Component {
     render() {
         return (
            <Fragment>
+             <GlobalStyle />
                {
                    this.state.steps ? (
-                   <Tour
+                     <Tour
                        onAfterOpen={disableBody}
                        onBeforeClose={enableBody}
                        steps={this.state.steps}
@@ -261,7 +261,7 @@ class TourGuide extends Component {
                        scrollOffset={1}
                        showNavigation={true}
                        className="tour-box"
-                   />
+                     />
                     ) : null
                }
 
