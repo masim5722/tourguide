@@ -49,6 +49,7 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: 2px 2px 3px #999;
     cursor: pointer;
     border: none;
+    outline: none;
   }
   .tour-box {
     padding: 0 !important;
@@ -111,7 +112,5 @@ const GlobalStyle = createGlobalStyle`
   }
   .title{
     font-size: 16px;
-  }
-
-`
+  }`
 export { GlobalStyle};
