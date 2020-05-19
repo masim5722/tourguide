@@ -169,6 +169,7 @@ class TourGuide extends Component {
                             )
                     };
                   const base_api_url = this.props.base_api_url;
+                  const image_url = this.props.image_url;
                   const api_secret = this.props.api_secret;
 
                     steps.push({
@@ -201,7 +202,7 @@ class TourGuide extends Component {
                                 if(response.data.data[k].image){
                                     return(
                                         <div className="tour-image">
-                                            <img src={base_api_url+response.data.data[k].image}/>
+                                            <img src={image_url+response.data.data[k].image}/>
                                         </div>
                                     )
                                 }
